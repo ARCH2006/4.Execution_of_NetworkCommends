@@ -26,7 +26,7 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 ## PROGRAM:
-# CLIENT:
+CLIENT:
 ```
 import socket 
 from pythonping import ping 
@@ -41,7 +41,7 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 ```
-# SERVER:
+SERVER:
 ```
 import socket 
 s=socket.socket() 
@@ -51,7 +51,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode()) 
 ```
-# TRACER:
+TRACER:
 ```
 from scapy.all import* 
 target = ["www.google.com"] 
@@ -59,11 +59,11 @@ result, unans = traceroute(target,maxttl=32)
 print(result,unans) 
 ```
 ## Output
-# tracer:
+tracer:
 ![Screenshot 2024-10-28 135142](https://github.com/user-attachments/assets/75bf60a8-7275-4599-b45e-9642b474496c)
-# client:
+client:
 ![Screenshot 2024-10-28 135156](https://github.com/user-attachments/assets/a699e42c-a85e-4097-aea1-56a3f6201c1d)
-# server:
+server:
 ![Screenshot 2024-10-28 135204](https://github.com/user-attachments/assets/9ae01cf7-6867-4528-a9a8-a62c580900e1)
 
 
