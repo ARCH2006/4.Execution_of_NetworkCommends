@@ -40,7 +40,7 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
-        ```
+```
 # SERVER:
 ```
 import socket 
@@ -50,7 +50,7 @@ while True:
     ip=input("Enter the website you want to ping ") \
     s.send(ip.encode()) 
     print(s.recv(1024).decode()) 
-    ```
+```
 # TRACER:
 ```
 from scapy.all import* 
